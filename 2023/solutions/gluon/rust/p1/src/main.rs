@@ -51,8 +51,6 @@ fn mode(numbers: &Vec<i32>) -> Option<Vec<i32>> {
 
     let max_frequency = *frequencies.values().max().unwrap_or(&0);
 
-    //let mut max = 1;
-
     for (number, count) in frequencies {
         if count == max_frequency && max_frequency > 1 {
             modes.push(number);
@@ -62,15 +60,6 @@ fn mode(numbers: &Vec<i32>) -> Option<Vec<i32>> {
     if modes.len() > 0 {
         mode = Some(modes);
     }
-
-    /*
-    for (number, count) in frequencies {
-        if count > max {
-            max = count;
-            mode = Some(*number);
-        }
-    }
-    */
 
     mode
 }
