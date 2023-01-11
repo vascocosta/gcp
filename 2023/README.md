@@ -10,23 +10,30 @@ Write a program that takes a list of **integers** as input and outputs the mean,
 
 #### Examples
 
-**Input:** [1, 2, 3]
-**Output:** Mean: 2, Median: 2, Mode: None
-
-**Input:** [4, 11, 2, 6, 10, 20]
-**Output:** Mean: 8.83, Median: 8, Mode: None
-
-**Input:** [3, 6, 2, 6, 1, 6, 1]
-**Output:** Mean: 3.57, Median: 3, Mode: [6]
-
-**Input:** [1, 1, 2, 2, 2, 3, 3, 3, 4]
-**Output:** Mean: 2.33, Median: 2, Mode: [2, 3]
-
-**Input:** [1]
-**Output:** Mean: 1, Median: 1, Mode: None
-
-**Input:** []
-**Output:** Mean: None, Median: None, Mode: None
+```
+Input: [1, 2, 3]
+Output: Mean: 2, Median: 2, Mode: None
+```
+```
+Input: [4, 11, 2, 6, 10, 20]
+Output: Mean: 8.83, Median: 8, Mode: None
+```
+```
+Input: [3, 6, 2, 6, 1, 6, 1]
+Output: Mean: 3.57, Median: 3, Mode: [6]
+```
+```
+Input: [1, 1, 2, 2, 2, 3, 3, 3, 4]
+Output: Mean: 2.33, Median: 2, Mode: [2, 3]
+```
+```
+Input: [1]
+Output: Mean: 1, Median: 1, Mode: None
+```
+```
+Input: []
+Output: Mean: None, Median: None, Mode: None
+```
 
 #### Notes
 
