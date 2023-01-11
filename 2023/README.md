@@ -1,7 +1,8 @@
 # Puzzles
 
-[P1 - Mean Median Mode](##mean-median-mode)
-[P2 - Simple Calculator](##simple-calculator)
+[P1 - Mean Median Mode](##Mean-Median-Mode)
+
+[P2 - Simple Calculator](##Simple-Calculator)
 
 ## Mean Median Mode
 
