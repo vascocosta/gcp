@@ -1,5 +1,7 @@
 use std::collections::HashMap;
 
+mod tests;
+
 fn display_float(value: f32) -> String {
     if value == value.floor() {
         value.to_string()
@@ -58,6 +60,7 @@ fn mode(numbers: &Vec<i32>) -> Option<Vec<i32>> {
     }
 
     if modes.len() > 0 {
+        modes.sort();
         mode = Some(modes);
     }
 
@@ -65,7 +68,8 @@ fn mode(numbers: &Vec<i32>) -> Option<Vec<i32>> {
 }
 
 fn main() {
-    let numbers = vec![1, 2, 4, 4, 2];
+    //let numbers = vec![1, 2, 4, 4, 2];
+    let numbers = vec![4, 11, 2, 6, 10, 20];
 
     match mean(&numbers) {
         None => print!("Mean: None, "),
