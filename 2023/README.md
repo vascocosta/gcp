@@ -1,10 +1,10 @@
 # Puzzles
 
-[P1 - Mean Median Mode](##-P1---Mean-Median-Mode)
+[P1 - Mean Median Mode](##-P1-Mean-Median-Mode)
 
-[P2 - Simple Calculator](##-P2---Simple-Calculator)
+[P2 - Simple Calculator](##-P2-Simple-Calculator)
 
-## P1 - Mean Median Mode
+## P1 Mean Median Mode
 
 ### Description
 
@@ -50,7 +50,7 @@ Output: Mean: None, Median: None, Mode: None
 3. The modulo operator (usually %) is helpful to determine whether a list has an even/odd number of items.
 
 
-## P2 - Simple Calculator
+## P2 Simple Calculator
 
 ### Description
 
