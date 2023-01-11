@@ -1,6 +1,7 @@
 # Puzzles
 
 [P1 - Mean Median Mode](##mean-median-mode)
+[P2 - Simple Calculator](##simple-calculator)
 
 ## Mean Median Mode
 
@@ -46,3 +47,22 @@ Output: Mean: None, Median: None, Mode: None
 1. You can provide the input hardcoded in your program, instead of getting it from the user or a file.
 2. Try to avoid library functions/methods that calculate the mean, median or mode.
 3. The modulo operator (usually %) is helpful to determine whether a list has an even/odd number of items.
+
+
+## Simple Calculator
+
+### Description
+
+Write a program that takes a list of **strings** corresponding to simple two-argument addition, subtraction, multiplication and division operations with infix operator as input and outputs the results.
+
+#### Examples
+
+```
+Input: ["1 + 1"]
+Output: [2]
+```
+
+```
+Input: ["1 + 1", "2 + 2"]
+Output: [2, 4]
+```
