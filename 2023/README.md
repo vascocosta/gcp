@@ -54,7 +54,7 @@ Output: Mean: None, Median: None, Mode: None
 
 ### Description
 
-Write a program that takes a list of **strings** corresponding to simple two-argument addition, subtraction, multiplication and division operations with infix operator as input and outputs the results.
+Write a program that takes a list of **strings** corresponding to simple two-argument addition, subtraction, multiplication and division operations with infix operator as input and outputs a list of **floats** with the results.
 
 #### Examples
 
