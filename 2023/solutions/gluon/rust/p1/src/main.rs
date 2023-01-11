@@ -67,10 +67,7 @@ fn mode(numbers: &Vec<i32>) -> Option<Vec<i32>> {
     mode
 }
 
-fn main() {
-    //let numbers = vec![1, 2, 4, 4, 2];
-    let numbers = vec![4, 11, 2, 6, 10, 20];
-
+fn p1(numbers: &Vec<i32>) {
     match mean(&numbers) {
         None => print!("Mean: None, "),
         Some(mean) => print!("Mean: {}, ", display_float(mean)),
@@ -85,4 +82,13 @@ fn main() {
         None => println!("Mode: None"),
         Some(modes) => println!("Mode: {:?}", modes),
     }
+}
+
+fn main() {
+    p1(&vec![1, 2, 3]);
+    p1(&vec![4, 11, 2, 6, 10, 20]);
+    p1(&vec![3, 6, 2, 6, 1, 6, 1]);
+    p1(&vec![1, 1, 2, 2, 2, 3, 3, 3, 4]);
+    p1(&vec![1]);
+    p1(&vec![]);
 }
