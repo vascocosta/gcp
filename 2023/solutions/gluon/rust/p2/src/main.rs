@@ -115,6 +115,7 @@ fn main() {
         "64    / 2",
         "2/0",
     ];
+    //let input = vec![];
 
     println!("{:?}", p2(input));
 }
