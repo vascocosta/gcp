@@ -64,19 +64,19 @@ The program should be able to handle lists of any length, including **empty list
 
 ```
 Input: ["1 + 1", "10 - 7", "4 * 25", "7 / 3"]
-Output: [2, 3, 100, 2.33]
+Output: ["2", "3", "100", "2.33"]
 ```
 ```
 Input: ["17.5 + 2.50", "2 - 1.5", "3 * 4.155", "20 / 0"]
-Output: [20, 0.5, 12.46, ND]
+Output: ["20", "0.50", "12.47", "ND"]
 ```
 ```
 Input: ["5+7 ", "45 -    5", "  10  *10", "0   /   0"]
-Output: [12, 40, 100, ND]
+Output: ["12", "40", "100", "ND"]
 ```
 ```
 Input: ["1-1"]
-Output: [0]
+Output: ["0"]
 ```
 ```
 Input: []

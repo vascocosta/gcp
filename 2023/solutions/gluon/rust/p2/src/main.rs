@@ -1,6 +1,14 @@
 use std::error::Error;
 use std::fmt;
 
+fn display_float(value: f32) -> String {
+    if value == value.floor() {
+        value.to_string()
+    } else {
+        format!("{:.2}", value)
+    }
+}
+
 #[derive(Debug)]
 struct ZeroDivisionError(String);
 
@@ -93,7 +101,7 @@ fn p2(operations: Vec<&'static str>) -> Vec<String> {
         let parsed_operation = Operation::parse(operation);
 
         match parsed_operation.execute() {
-            Ok(result) => results.push(result.to_string()),
+            Ok(result) => results.push(display_float(result)),
             Err(error) => {
                 if error.to_string().to_lowercase() == "divide by zero" {
                     results.push("ND".to_string())
@@ -105,17 +113,9 @@ fn p2(operations: Vec<&'static str>) -> Vec<String> {
     results
 }
 fn main() {
-    let input = vec![
-        "7/3.78",
-        "1+1",
-        "iii435ii",
-        "3+    7",
-        "22 - 8",
-        "3*7",
-        "64    / 2",
-        "2/0",
-    ];
-    //let input = vec![];
-
-    println!("{:?}", p2(input));
+    println!("{:?}", p2(vec!["1 + 1", "10 - 7", "4 * 25", "7 / 3"]));
+    println!("{:?}", p2(vec!["17.5 + 2.50", "2 - 1.5", "3 * 4.155", "20 / 0"]));
+    println!("{:?}", p2(vec!["5+7 ", "45 -    5", "  10  *10", "0   /   0"]));
+    println!("{:?}", p2(vec!["1-1"]));
+    println!("{:?}", p2(vec![]));
 }
