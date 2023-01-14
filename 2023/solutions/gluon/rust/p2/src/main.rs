@@ -1,6 +1,8 @@
 use std::error::Error;
 use std::fmt;
 
+mod tests;
+
 fn display_float(value: f32) -> String {
     if value == value.floor() {
         value.to_string()
@@ -36,7 +38,7 @@ struct Operation {
 }
 
 impl Operation {
-    fn _new(operator: Operator, left_operand: f32, right_operand: f32) -> Self {
+    fn new(operator: Operator, left_operand: f32, right_operand: f32) -> Self {
         Self {
             operator,
             left_operand,
