@@ -44,7 +44,7 @@ impl Operation {
         }
     }
 
-    fn parse(string: &'static str) -> Self {
+    fn parse(string: &str) -> Self {
         let string = string.replace(" ", "");
         let operands: Vec<&str>;
         let operator: Operator;
@@ -94,7 +94,7 @@ impl Operation {
     }
 }
 
-fn p2(operations: Vec<&'static str>) -> Vec<String> {
+fn p2(operations: Vec<&str>) -> Vec<String> {
     let mut results = Vec::new();
 
     for operation in operations {
